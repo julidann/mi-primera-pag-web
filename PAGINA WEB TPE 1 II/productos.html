@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwimAcademy - Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1 id="h1Titulo">Swim Academy</h1>
+        <img id="imgLogo" src="img/logo.png" alt="SwimAcademy Logo">
+    </header>
+    <nav id="stickyNav">
+        <button id="menuToggle">☰</button>
+        <ul class="ulNav" id="navLinks">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="actividades.html"> Actividades</a></li>
+            <li><a href="horarios.html"> Horarios</a></li>
+            <li><a href="productos.html"> Productos</a></li>
+            <li><a href="contacto.html"> Contacto</a></li>
+            <li> <button id="btnClaroOscuro"> 🔆 </button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sectionMain" id="sectionProductos">
+            <h2 class="tituloMain">Productos
+                <img class="imgSponsor" src="img/logoSponsor.png" alt="arena">
+            </h2>
+
+        </section>
+
+        <section id="divProductos">
+            <form id="formProducto">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre producto" required>
+                <label for="precio">Precio *</label>
+                <input type="number" id="precio" name="precio" placeholder="Precio" required>
+                <label for="descripcion">Descripción *</label>
+                <input type="text" id="descripcion" name="descripcion" placeholder="Descripción" required>
+                <label for="categoria">Categoría *</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="Mallas">Mallas</option>
+                    <option value="Antiparras">Antiparras</option>
+                    <option value="Bolsos / Mochilas">Bolsos / Mochilas</option>
+                    <option value="Toallas">Toallas</option>
+                    <option value="Accesorios">Accesorios</option>
+                </select>
+                <label>Stock *</label>
+                <select id="stock" name="stock" required>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Agotado">Agotado</option>
+                </select>
+
+                <button type="submit" id="btnAgregarProd">Agregar</button>
+            </form>
+        </section>
+
+        <section>
+            <div class="divFiltro">
+                <form action="" id="formFiltro">
+                <label for="filtroNombre">Buscar producto</label>
+                <input type="text" id="filtroNombre" placeholder="Buscar por nombre...">
+                <select id="filtroCategoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="Mallas">Mallas</option>
+                    <option value="Antiparras">Antiparras</option>
+                    <option value="Toallas">Toallas</option>
+                    <option value="Bolsos / Mochilas">Bolsos / Mochilas</option>
+                    <option value="Accesorios">Accesorios</option>
+                </select>
+
+                <select id="filtroStock">
+                    <option value="">Todos los estados</option>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Agotado">Agotado</option>
+                </select>
+
+                <button type="submit" id="btnAplicarFiltros">Filtrar</button>
+                </form>
+            </div>
+
+            <div id="loading">
+                <table class="tablaProductos">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Categoría</th>
+                            <th>Stock</th>
+                            <th>Eliminar/Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyProductos">
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div>
+                <p id="mje-paginacion"></p>
+                <button id="btnAnterior">Anterior</button>
+                <button id="btnSiguiente">Siguiente</button>
+                <button  id="btnLimpiarFiltros">Limpiar Filtros</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer_">
+        <section id="sectionFooter">
+            <article>
+                <p>Información: </p>
+                <ul class="ulFooter">
+                    <li>Dirección: Av Reforma Universitaria 1234, Tandil, Buenos Aires</li>
+                    <li>Tel: +54 9 (0249) 15 4 123456</li>
+                    <li>Email: informacion@swimacademy.com.ar</li>
+                </ul>
+            </article>
+            <article>
+                <p>Seguinos en nuestras redes:</p>
+                <ul class="ulFooter">
+                    <li><img class="logoFooter" src="img/facebook.png" alt="Logo Facebook">Facebook</li>
+                    <li><img class="logoFooter" src="img/instagram.png" alt="Logo Instagram">Instagram</li>
+                    <li><img class="logoFooter" src="img/twitter.png" alt="Logo Twitter X">X (Twitter)</li>
+                </ul>
+            </article>
+        </section>
+        <section id="sectionFooter2">
+            <p>"Promoviendo el aprendizaje, la seguridad y el disfrute en el agua para todas las edades"</p>
+            <p> © 2025 SwimAcademy. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+    <script src="js/barraNav.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/temaClaroOscuro.js"></script>
+</body>
+
+</html>

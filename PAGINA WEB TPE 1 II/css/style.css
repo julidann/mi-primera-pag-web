@@ -1,0 +1,523 @@
+/* .css Responsive: Mobile First */
+
+/* Body y header*/
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    align-content: center;
+    background-color:#041e42;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+}
+
+#h1Titulo {
+    display: none;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+#imgLogo{
+    padding: 10px;
+    border-radius: 60px;
+    margin: 0 auto;
+    max-width: 100px
+}
+#sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color:#ba0c2f ;
+    text-align: center;
+}
+.imgPortada {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.fraseDiv {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+    text-shadow:1px 1px #000000;
+}
+
+/* Barra de navegación */
+#stickyNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:#041e42;
+}
+#menuToggle {
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: #000000;
+}
+.ulNav {
+    list-style: none;
+    padding: 50px;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.ulNav li a, .ulNav li{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+}
+#btnClaroOscuro{
+    background-color:#041e42;
+    border-style: none;
+    font-size: 30px;
+}
+
+/*Main*/
+main{
+    padding: 0 20px 40px 20px;
+}
+.textoNegrita{
+    font-weight: bold;
+}
+.parrafoMain{
+    font-size: 25px;
+    text-align: justify;
+}
+article ul{
+    list-style: square;
+}
+.article ul, article ol{
+    font-size: 20px;
+    padding-left: 50px;
+}
+.sectionMain{
+    display:flex;
+    justify-content: center;
+}
+.articleHome, .tituloMain{
+    text-align: center;
+    border-style: solid;
+    border-color:#0000000a;
+    border-radius: 10px;
+    width: 100%;
+}
+.tituloMain {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.propuestaInfoHorario{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.subtitulosHome, .h3sectionMain{ 
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.imgHome{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Botones */
+
+.buttonHome, .btnVerMas, #btnEnviarForm, #btnAgregarProd, .btnAccion, #btnAnterior, #btnSiguiente, .divFiltro button, #btnLimpiarFiltros{ 
+    display: inline-block;
+    width: 25%;
+    margin: 5px;
+    padding: 8px;
+    background-color:#ba0c2f;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.divFiltro button{
+    background-color: #00122b;
+}
+.btnVerMas, #btnEnviarForm, #btnAgregarProd, .btnAccion, #btnAnterior, #btnSiguiente, .divFiltro button, #btnLimpiarFiltros{
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+#btnEnviarForm, #btnAgregarProd, .btnAccion{
+    width: 30%;
+    text-transform: uppercase;
+    box-shadow: 0.5px 0.5px black;;
+}
+#btnAplicarFiltros, #btnLimpiarFiltros{
+    display: block;
+}
+
+/*.css actividades.html */
+.imgAct{
+    width: 100%;
+    border-radius: 20px;
+}
+.h3BtnAct{
+    display: flex;
+    align-items: center;
+}
+
+/*.css horarios.html*/
+
+table{
+    background-color: #021b3d;
+    color: white;
+    border-radius: 8px;
+    margin-left: 30px;
+    padding: 2px;
+    width: 80%;
+}
+.theadHorarios, .tablaProductos th{
+    background-color: #ba0c2f;
+    color: white;
+    border-radius: 8px;
+}
+th, td, .tablaProductos th {
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
+}
+td{
+    text-align: center;
+    background-color: #ffffff;
+    color: #021b3d;
+    border-radius: 5px;
+}
+
+/*.css productos.html tabla*/
+#sectionProductos{
+    display: block;
+}
+.imgSponsor{
+    width: 20%;
+}
+#loading {
+  overflow-x: auto;
+  width: 100%;
+}
+.btnAccion{
+    display: block;
+    width: 100%;
+}
+.divFiltro{
+    color:white;
+    background-color: #ba0c2f;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.divFiltro select{
+    font-size: inherit;
+    background-color: white;
+    border-radius: 20px;
+}
+.imgSponsor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+/*.css contactos.html y productos.html*/
+#divForm, #divProductos, #formProducto, .stock{
+  display: flex;
+  flex-direction: column;
+}
+.stock{
+    width: 50%;
+}
+
+#formContacto, .ImgCaptcha, #formProducto{
+    background-color:#021b3d;
+    color: white;
+    padding: 30px;
+    border-radius: 50px 50px 0px 0px ;
+}
+#formProducto{
+    border-radius: 50px 50px 50px 50px ;
+    margin-bottom: 30px;
+
+}
+input, #nivel, textarea, #categoria, #stock, #filtroCategoria, #filtroStock{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 20px;
+}
+#nivel, #categoria, #stock{
+    display: block;
+}
+textarea{
+    height: 100px;
+    resize: none;
+    border-radius: 15px;
+    padding: 5px; 
+}
+.ImgCaptcha{
+    background-color:#021b3d;
+    border-radius: 0px 0px 50px 50px;
+    height: 300px;
+}
+#imgAleatoria{
+    width:100px;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: #041e42;
+    color: white;
+    padding: 1rem;
+}
+#sectionFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.logoFooter {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+#sectionFooter2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+.ulFooter{
+    list-style: none;
+}
+
+/*JAVASCRIPT*/
+/*.css classList barraNav.js */
+.ulNav.active {
+  display: flex;
+  width: auto;
+}
+/*.css classList temaClaroOscuro.js*/
+main.oscuro, .tablaProductos.oscuro td {
+  background-color: #121212;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+.tablaProductos.oscuro{
+    background-color: #ffffff;
+  color: #f0f0f0;
+}
+.tablaProductos.oscuro th{
+    background-color: #041e42;
+}
+.tablaProductos.oscuro td.gris{
+    background-color: #4e4e4e;
+}
+
+/* .css mostrarOcultar.js */
+.mostrar{
+    display: block;
+}
+.ocultar{
+    display: none;
+}
+#btnSiguiente.btnNone, #btnAnterior.btnNone{
+    display: none;
+}
+
+/*----------*/
+.gris{
+    background-color: #4e4e4e;
+    color: white;
+}
+/* Media Queries: pantallas mayores a 768px */
+@media (min-width: 768px) {
+    #h1Titulo {
+        display: block;
+        font-size: 70px;
+    }
+    .fraseDiv {
+    width: 80%;
+    padding-left: 50px;
+    font-size: 50px;
+}
+    #imgLogo {
+        display: none;
+    }
+    nav{
+    background-color: #00122b;
+}
+    #stickyNav {
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    }
+    #menuToggle {
+        display: none;
+    }
+    #btnClaroOscuro{
+        cursor: pointer;
+    }
+   
+    .ulNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .ulNav li a:hover{
+    color: #ba0c2f;
+    }
+    #sectionHeader {
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: left;
+        height: 300px;
+    }
+    .imgPortada {
+        display: block;
+        height: inherit;
+        width: auto;
+    }
+    main{
+        padding: 0px 50px 100px 100px;
+    }
+    .propuestaInfoHorario{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .subtitulosHome{
+        font-size: 20px;
+    }
+    .articleHome {
+        width: 30%;
+    }
+    .tituloMain{
+        font-size: 70px;
+    }
+    .parrafoMain{
+        font-size: 40px;
+    }
+    .buttonHome{
+        font-size: 10px;
+    }
+    article ol, .listaDesordenada, h4{
+    font-size: 30px;
+    padding-left: 50px;
+    }
+    h4{
+        height: 80px;
+        width: 80%;
+    }
+    .h3sectionMain{
+        font-size: 40px;
+    }
+    .buttonHome:hover, #btnEnviarForm:hover, .btnAccion:hover, #btn-AgregarProd:hover, #btnAnterior:hover, #btnSiguiente:hover{
+        text-decoration: underline;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.352);
+        
+    }
+    .sectionActividades{
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    list-style: none;
+    gap: 30px;
+    margin:0% 5% 0% 5%;
+    }
+    .listaAct{
+    display:flex;
+    }
+    .pDescripcionAct{
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+        height: 100px;
+    }
+    .articleActividades{
+    flex:1;
+    }
+    .imgSponsor{
+        width: 10%;
+    }
+
+    .tablaProductos{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .tablaProductos td{
+        text-align: left;
+    }
+    #formProductos{
+        display: flex;
+    }
+    #categoria, #stock{
+        font-family: inherit;
+        width: 50%;
+        height: 50px;
+    }
+    #divForm{
+        align-items: center;
+    }
+    #formContacto, .ImgCaptcha{
+        flex-direction: column;
+        width: 40%;
+    }
+    #sectionFooter {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #sectionFooter2 img {
+        display: inline;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .fraseDiv {
+    font-size: 70px;
+    }
+    .buttonHome{
+        font-size: 15px;
+    }
+    .imgAct{
+        width: 450px;
+        height: 300px;
+    }
+    .pDescripcionAct{
+        text-align: justify;
+        font-size: 20px;
+        width: 450px;
+        height: 100px;
+    }
+    #sectionActividadAdultos, #sectionActividadNiños, #sectionActividadComp {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap:30px;
+    }
+    #sectionActividadAdultos.ocultar, #sectionActividadNiños.ocultar, #sectionActividadComp.ocultar{
+        display: none;
+    }
+}

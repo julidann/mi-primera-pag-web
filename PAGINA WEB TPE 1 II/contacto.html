@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwimAcademy - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="h1Titulo">Swim Academy</h1>
+        <img id="imgLogo" src="img/logo.png" alt="SwimAcademy Logo">
+    </header>
+    <nav id="stickyNav">
+        <button id="menuToggle">☰</button>
+        <ul class="ulNav" id="navLinks">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="actividades.html"> Actividades</a></li>
+            <li><a href="horarios.html"> Horarios</a></li>
+            <li><a href="productos.html"> Productos</a></li>
+            <li><a href="contacto.html"> Contacto</a></li>
+            <li> <button id="btnClaroOscuro"> 🔆 </button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sectionMain">
+            <h2 class="tituloMain"> Contactanos </h2>
+        </section>
+        <section id="divForm">
+            <form id="formContacto" >
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre">
+                <label for="">Correo electrónico</label>
+                <input type="email" placeholder="Ingrese su email" required>
+                <label for="">Celular</label>
+                <input type="text" placeholder="(0249)154123456">
+                <label for="nivel">Nivel</label>
+                <select name="nivel" id="nivel" required>
+                    <optgroup label="Natación adultos">
+                        <option value="">Inicial</option>
+                        <option value="">Intermedio</option>
+                        <option value="">Avanzado</option>
+                        <option value="">Aquagym</option>
+                        <option value="">Terapéutica</option>
+                        <option value="">Pileta Libre</option>
+                    </optgroup>
+                    <optgroup label="Natación niños">
+                        <option value="">Pre-escolar</option>
+                        <option value="">Escuelita</option>
+                    </optgroup>
+                    <optgroup label="Competición">
+                        <option value="">Juveniles</option>
+                        <option value="">Máster</option>
+                    </optgroup>
+                </select>
+                <label for="">Consulta</label>
+                <textarea name="" id="" placeholder="Ingrese su consulta:"></textarea>
+            </form>
+            <div class="ImgCaptcha">
+                <img id="imgAleatoria" src=" ">
+                <form>
+                    <label for="nombreAnimal">CAPTCHA: No soy un robot</label>
+                    <input type="text" id="nombreAnimal" placeholder="Ingrese nombre del animal">
+                    <button id="btnEnviarForm">Enviar</button>
+                    <p id="respuesta"> </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="sectionFooter">
+            <article>
+                <p>Información: </p>
+                <ul class="ulFooter">
+                    <li>Dirección: Av Reforma Universitaria 1234, Tandil, Buenos Aires</li>
+                    <li>Tel: +54 9 (0249) 15 4 123456</li>
+                    <li>Email: informacion@swimacademy.com.ar</li>
+                </ul>
+            </article>
+            <article>
+                <p>Seguinos en nuestras redes:</p>
+                <ul class="ulFooter">
+                    <li><img class="logoFooter" src="img/facebook.png" alt="Logo Facebook">Facebook</li>
+                    <li><img class="logoFooter" src="img/instagram.png" alt="Logo Instagram">Instagram</li>
+                    <li><img class="logoFooter" src="img/twitter.png" alt="Logo Twitter X">X (Twitter)</li>
+                </ul>
+            </article>
+        </section>
+        <section id="sectionFooter2">
+            <p>"Promoviendo el aprendizaje, la seguridad y el disfrute en el agua para todas las edades"</p>
+            <p> © 2025 SwimAcademy. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+    <script src="js/barraNav.js"></script>
+    <script src="js/captcha.js"></script>
+    <script src="js/temaClaroOscuro.js"></script>
+</body>
+
+</html>

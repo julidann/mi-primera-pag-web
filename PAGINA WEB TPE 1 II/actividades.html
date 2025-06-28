@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim Academy - Actividades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1 id="h1Titulo">Swim Academy</h1>
+        <img id="imgLogo" src="img/logo.png" alt="SwimAcademy Logo">
+    </header>
+    <nav id="stickyNav">
+        <button id="menuToggle">☰</button>
+        <ul class="ulNav" id="navLinks">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="actividades.html"> Actividades</a></li>
+            <li><a href="horarios.html"> Horarios</a></li>
+            <li><a href="productos.html"> Productos</a></li>
+            <li><a href="contacto.html"> Contacto</a></li>
+            <li> <button id="btnClaroOscuro"> 🔆 </button></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sectionMain">
+            <h2 class="tituloMain"> Nuestras actividades </h2>
+        </section>
+        <section>
+            <p class="parrafoMain">En <span class="textoNegrita">Swim Academy </span>, ofrecemos actividades acuáticas
+                para todas las edades y niveles</p>
+            <article class="listaAct">
+                <ul class="listaDesordenada">
+                    <li>Natación adultos
+                        <ul>
+                            <li>Inicial, intermedio y avanzado.</li>
+                            <li>Aquagym</li>
+                            <li>Terapéutica</li>
+                            <li>Pileta Libre</li>
+                        </ul>
+                    </li>
+                    <li>Niños
+                        <ul>
+                            <li>Pre-escolar (3 a 5 años)</li>
+                            <li>Escuelita (6 a 12 años)</li>
+                        </ul>
+                    </li>
+                    <li>Competición
+                        <ul>
+                            <li>Menores, cadetes y juveniles.</li>
+                            <li>Máster</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <p class="parrafoMain">Explorá nuestras opciones y encontrá la actividad perfecta para vos. ¡Te esperamos
+                para nadar juntos!</p>
+        </section>
+        <section class="h3BtnAct">
+            <h3 class="h3sectionMain">Natación adultos</h3>
+            <button class="btnVerMas" id="verMasAdultosAct">Ver más</button>
+        </section>
+        <section id="sectionActividadAdultos" class="ocultar">
+            <div class="actividades">
+                <article>
+                    <h4>Adultos</h4>
+                    <img class="imgAct" src="img/adultos.jpg" alt="Foto Adultos">
+                    <p class="pDescripcionAct">Clases para mayores de 13 años que buscan aprender a nadar, mejorar su
+                        técnica o mantenerse activos en el agua. Hay para todos los niveles: iniciación, Intermedio y
+                        avanzado! </p>
+                    <article>
+                        <h4>Aquagym</h4>
+                        <img class="imgAct" src="img/aquagym.jpg" alt="Foto Aquagym">
+                        <p class="pDescripcionAct">Actividad física en el agua, de bajo impacto, ideal para mejorar la
+                            movilidad, fuerza y resistencia sin cargar las articulaciones.</p>
+                    </article>
+            </div>
+            <div class="actividades">
+                <article>
+                    <h4>Terapéutica</h4>
+                    <img class="imgAct" src="img/terapeutica.jpg" alt="Foto Terapéutica">
+                    <p class="pDescripcionAct">Clases enfocadas en la rehabilitación y el bienestar físico, supervisadas
+                        por Kinesiólogos y profesores de Ed. Física especializados en salud y movimiento acuático.</p>
+                </article>
+                <article>
+                    <h4>Pileta Libre</h4>
+                    <img class="imgAct" src="img/piletaLibre.jpg" alt="Foto Pileta Libre">
+                    <p class="pDescripcionAct">Espacio destinado al uso personal de la pileta. No se dictan clases, pero
+                        siempre hay un guardavidas presente.</p>
+                </article>
+            </div>
+        </section>
+        <section class="h3BtnAct">
+            <h3 class="h3sectionMain">Natación niños</h3>
+            <button class="btnVerMas" id="verMasNiñosAct">Ver más</button>
+        </section>
+        <section id="sectionActividadNiños" class="ocultar">
+            <article>
+                <h4>Pre-escolar (3 a 5 años)</h4>
+                <img class="imgAct" src="img/preEscolar.jpg" alt="Foto PreEscolar">
+                <p class="pDescripcionAct">Iniciación a la natación en un entorno seguro y lúdico, adaptado a las
+                    necesidades de niños pequeños. Se trabaja la familiarización con el medio acuático.</p>
+            </article>
+            <article>
+                <h4>Escuelita (6 a 12 años)</h4>
+                <img class="imgAct" src="img/escuelita.jpg" alt="Foto Escuelita">
+                <p class="pDescripcionAct">Clases para niños y niñas en edad escolar, con foco en el aprendizaje de
+                    estilos básicos, flotación, respiración y técnica general.</p>
+            </article>
+        </section>
+        <section class="h3BtnAct">
+            <h3 class="h3sectionMain">Competición</h3>
+            <button class="btnVerMas" id="verMasCompAct">Ver más</button>
+        </section>
+        <section id="sectionActividadComp" class="ocultar">
+            <article>
+                <h4> Competición: Menores, Cadetes y Juveniles</h4>
+                <img class="imgAct" src="img/juveniles.jpg" alt="Foto Juveniles">
+                <p class="pDescripcionAct">Entrenamientos intensivos para nadadores jóvenes con objetivos competitivos.
+                    Se trabaja técnica, velocidad, resistencia y estrategia de carrera.</p>
+            </article>
+            <article>
+                <h4>Competición: Másters</h4>
+                <img class="imgAct" src="img/master.jpg" alt="Foto Máster">
+                <p class="pDescripcionAct">Grupo competitivo para adultos con experiencia en natación. Se entrena con
+                    foco en el rendimiento, manteniendo un ambiente motivador y social.</p>
+            </article>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <section id="sectionFooter">
+            <article>
+                <p>Información: </p>
+                <ul class="ulFooter">
+                    <li>Dirección: Av Reforma Universitaria 1234, Tandil, Buenos Aires</li>
+                    <li>Tel: +54 9 (0249) 15 4 123456</li>
+                    <li>Email: informacion@swimacademy.com.ar</li>
+                </ul>
+            </article>
+            <article>
+                <p>Seguinos en nuestras redes:</p>
+                <ul class="ulFooter">
+                    <li><img class="logoFooter" src="img/facebook.png" alt="Logo Facebook">Facebook</li>
+                    <li><img class="logoFooter" src="img/instagram.png" alt="Logo Instagram">Instagram</li>
+                    <li><img class="logoFooter" src="img/twitter.png" alt="Logo Twitter X">X (Twitter)</li>
+                </ul>
+            </article>
+        </section>
+        <section id="sectionFooter2">
+            <p>"Promoviendo el aprendizaje, la seguridad y el disfrute en el agua para todas las edades"</p>
+            <p> © 2025 SwimAcademy. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+    <script src="js/barraNav.js"></script>
+    <script src="js/mostrarOcultar.js"></script>
+    <script src="js/temaClaroOscuro.js"></script>
+</body>
+
+</html>
